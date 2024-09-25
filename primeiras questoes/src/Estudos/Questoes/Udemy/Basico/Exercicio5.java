@@ -6,7 +6,7 @@ class Exercicio5{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite o codigo da peca");
-        double codigoPeca1 = sc.nextDouble();
+        int codigoPeca1 = sc.nextInt();
         System.out.println("Digite o numero de pecas");
         double numeroDePecas = sc.nextDouble();
         System.out.println("Digite o valor unitario da peca");

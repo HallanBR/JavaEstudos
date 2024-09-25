@@ -1,6 +1,7 @@
+package Estudos.Questoes.Udemy.Basico.Outros;
 import java.util.Scanner;
 
-public class main{
+public class Lote{
 
     public static void main(String[] args) {
 
