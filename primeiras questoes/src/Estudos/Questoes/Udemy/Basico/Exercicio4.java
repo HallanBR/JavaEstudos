@@ -1,3 +1,4 @@
+package Estudos.Questoes.Udemy.Basico;
 import java.util.Scanner;
 class Exercicio4 {
     public static void main(String[] args) {
