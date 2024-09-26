@@ -18,16 +18,30 @@ public class folhaDeDicas { // Nome da classe com a primeira letra maiúscula
         
         String texto = "Hello everyone"; // Declara variaveis em formato de texto
         System.out.println("Texto: " + texto); // Imprime o valor de 'texto'
-        
-        // Tipos de dados
+
+
+
+
+
+
+// Tipos de dados
         // Tipos primitivos: byte, short, int, long, float, double, char, boolean.
         // Tipos de referência: String, Arrays, Objects.
 
-        // Arrays
+
+
+
+
+
+// Arrays
         int[] numbers = {1, 2, 3, 4, 5};
         System.out.println(numbers[0]); // Acessa o primeiro elemento "0"
 
-        // Métodos/Funções
+
+
+
+
+// Métodos/Funções
         saudar("Hallan"); // Chamada do método, agora corretamente fora do método main
     }
 
@@ -35,6 +49,11 @@ public class folhaDeDicas { // Nome da classe com a primeira letra maiúscula
         System.out.println("Hello, " + nome); // Melhorando a formatação
     }
 }
+
+
+
+
+
 
 // Classes e Objetos
         class Pessoa {
@@ -47,17 +66,19 @@ public class folhaDeDicas { // Nome da classe com a primeira letra maiúscula
             }
             void introduzir() {
                 System.out.println("Meu nome e " + nome + " e eu tenho " + idade + "anos." );
-                }
             }
-
+        }
             class Main {
                 public static void main(String[] args) {
         // Criar objeto da classe Pessoa
         Pessoa pessoa = new Pessoa("Bob ", 30);
         pessoa.introduzir(); // Chamar método introduzir
-        
                 }
             }
+
+
+
+
 
 // heranca
         class Animal{
@@ -70,12 +91,30 @@ public class folhaDeDicas { // Nome da classe com a primeira letra maiúscula
             void latir() {
                 System.out.println("Woof!");
             }
-        
-        // Classe principal para testar herança
+        class Cat extends Animal {
+            void miar() {
+                System.out.println("Meow");
+            }
+        }
+
+
+
+
+
+
+
+// Classe principal para testar herança
                 public static void main(String[] args) {
                 Dog dog = new Dog(); // Criando um objeto Dog
                 dog.comer(); // Chamando o método comer da classe Animal
                 dog.latir(); // Chamando o método latir da classe Dog
-            }
+                }
+                {
+                Cat cat = new Cat(); // Criando um objeto Dog
+                cat.comer(); // Chamando o método comer da classe Animal
+                cat.miar(); // Chamando o método latir da classe Dog
+                }
         }
-    
+
+
+        
