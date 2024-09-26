@@ -70,13 +70,11 @@ public class folhaDeDicas { // Nome da classe com a primeira letra maiúscula
         }
             class Main {
                 public static void main(String[] args) {
-        // Criar objeto da classe Pessoa
-        Pessoa pessoa = new Pessoa("Bob ", 30);
-        pessoa.introduzir(); // Chamar método introduzir
+                    // Criar objeto da classe Pessoa
+                Pessoa pessoa = new Pessoa("Bob ", 30);
+                pessoa.introduzir(); // Chamar método introduzir
                 }
             }
-
-
 
 
 
