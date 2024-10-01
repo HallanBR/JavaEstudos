@@ -1,4 +1,4 @@
-package Estudos.Aprendizado; // Corrigido com ponto e vírgula
+
 
 // Sintaxe básica
 public class folhaDeDicas { // Nome da classe com a primeira letra maiúscula
