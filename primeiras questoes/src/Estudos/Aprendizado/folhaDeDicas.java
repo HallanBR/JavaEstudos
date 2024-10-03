@@ -97,10 +97,6 @@ public class folhaDeDicas { // Nome da classe com a primeira letra maiúscula
 
 
 
-
-
-
-
 // Classe principal para testar herança
                 public static void main(String[] args) {
                 Dog dog = new Dog(); // Criando um objeto Dog
