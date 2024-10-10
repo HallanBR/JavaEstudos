@@ -10,8 +10,9 @@ public class ProcessoSeletivo {
             String [] candidatos= {"Felipe", "Marcia", "julia", "Paulo", "Augusto", "Monica"};
                 System.out.println("Imprimindo a lista de candidatos informando o indice do elemento");
             for(int indice=0; indice < candidatos.length; indice++) {
-              System.out.println("O candidato de numero " + (indice+1) + " e o " + candidatos[indice]);
+            System.out.println("O candidato de numero " + (indice+1) + " e o " + candidatos[indice]);
             }
+
             System.out.println("forma abreviada de FOR EACH");
             for(String candidato: candidatos ) {
                 System.out.println("o candidato selecionado foi "+ candidato );
