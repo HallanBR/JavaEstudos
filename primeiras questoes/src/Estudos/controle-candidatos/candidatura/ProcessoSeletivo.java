@@ -1,13 +1,43 @@
+import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class ProcessoSeletivo {
 
     public static void main(String[] args) {
         imprimirSelecionados();
+
+        String [] candidatos = {"Felipe", "Marcia", "julia", "Paulo", "Augusto", "Monica", "Fabricio", "Mirela", "Daniela", "Jorge"};
+        for (String candidato: candidatos){
+            entrandoEmContato(candidato);
+        }
     }
+        static void entrandoEmContato(String candidato){
+            int tentativasRealizadas = 1;
+            boolean continuarTentando = true;
+            boolean atendeu = false;
+            do {
+                atendeu = atender();
+                continuarTentando = !atendeu;
+                if (continuarTentando) tentativasRealizadas++;
+                    else System.out.println("Contato realizado com sucesso");
+
+
+            } while (continuarTentando && tentativasRealizadas < 3);
+
+            if (atendeu)System.out.println("Conseguimos contato com " + candidato + " na " + tentativasRealizadas + " tentativa realizada");
+                
+            else System.out.println("Nao conseguimos contato com " + candidato + ", numero maximo de tentativas " + tentativasRealizadas);
+                
+            
+
+        }
+        // metodo auxiliar
+        static boolean atender () {
+            return new Random().nextInt(3)==1;
+        }
         
         static void imprimirSelecionados () {
-            String [] candidatos= {"Felipe", "Marcia", "julia", "Paulo", "Augusto", "Monica"};
+            String [] candidatos= {"Felipe", "Marcia", "julia", "Paulo", "Augusto", "Monica", "Fabricio", "Mirela", "Daniela", "Jorge"};
                 System.out.println("Imprimindo a lista de candidatos informando o indice do elemento");
             for(int indice=0; indice < candidatos.length; indice++) {
             System.out.println("O candidato de numero " + (indice+1) + " e o " + candidatos[indice]);
