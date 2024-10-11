@@ -24,14 +24,16 @@ public class ProcessoSeletivo {
 
             } while (continuarTentando && tentativasRealizadas < 3);
 
-            if (atendeu)System.out.println("Conseguimos contato com " + candidato + " na " + tentativasRealizadas + " tentativa realizada");
+            if (atendeu)
+                System.out.println("Conseguimos contato com " + candidato + " na " + tentativasRealizadas + " tentativa realizada");
                 
-            else System.out.println("Nao conseguimos contato com " + candidato + ", numero maximo de tentativas " + tentativasRealizadas);
+            else
+                System.out.println("Nao conseguimos contato com " + candidato + ", numero maximo de tentativas " + tentativasRealizadas);
                 
             
 
         }
-        // metodo auxiliar
+        
         static boolean atender () {
             return new Random().nextInt(3)==1;
         }
