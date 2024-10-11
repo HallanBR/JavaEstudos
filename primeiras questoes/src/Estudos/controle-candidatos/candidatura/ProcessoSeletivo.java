@@ -57,7 +57,8 @@ public class ProcessoSeletivo {
             System.out.println("O candidato de numero " + (indice+1) + " e o " + candidatos[indice]);
             }
 
-            System.out.println("forma abreviada de FOR EACH");
+            // Forma abreviada de FOR EACH, diferente da forma acima, essa nao tem o indice
+            System.out.println("");
             for(String candidato: candidatos ) {
                 System.out.println("o candidato selecionado foi "+ candidato );
             }
