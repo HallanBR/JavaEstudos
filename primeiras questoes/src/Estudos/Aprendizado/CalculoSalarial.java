@@ -18,7 +18,9 @@ public class CalculoSalarial {
             // Atribui a aliquota de 15% se o salario que ultrapassar 2500
                 else {valorDeImposto = 0.15f * valorSalarial;}
 
+        // Faz o calculo que sera impressso
         float saida = valorSalarial - valorDeImposto + beneficios;
+        // Imprime o calculo realizado
         System.out.println("O valor do seu salario liguido e de " + saida);
 
     }
