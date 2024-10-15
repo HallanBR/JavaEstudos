@@ -12,7 +12,7 @@ public class verificacaoServico {
 
         // Separando o nome do cliente e os serviços contratados
         String[] partes = entradaCliente.split(",");
-        String cliente = partes[0];
+        String usuario = partes[0];
         boolean contratado = false;
 
         // Verifica se o serviço está na lista de serviços contratados

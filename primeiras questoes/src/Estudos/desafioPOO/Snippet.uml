@@ -1,0 +1,27 @@
+classDiagram
+    class iPhone {
+        - volume: int
+        + tocar()
+        + pausar()
+        + fazerChamada()
+        + navegarNaInternet()
+    }
+    
+    interface ReprodutorMusical {
+        + tocar()
+        + pausar()
+        + selecionarMusica()
+    }
+    
+    interface Telefone {
+        + fazerChamada()
+        + receberChamada()
+    }
+    
+    interface Navegador {
+        + navegarNaInternet()
+    }
+    
+    iPhone --|> ReprodutorMusical
+    iPhone --|> Telefone
+    iPhone --|> Navegador
