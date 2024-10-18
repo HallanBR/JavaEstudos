@@ -1,8 +1,5 @@
-package Estudos.desafioPOO;
 
 public class iphone {
-    private int volume;
-
     public void tocar() {
         // Implementação para tocar música
     }
